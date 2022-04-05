@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    margin-top: 104px;
+}
+
+
+/* header start */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104px;
+    background-color: #141414;
+    z-index: 1;
+}
+
+.logo{
+    margin-left: 58px;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color:#3CC25A;
+}
+
+.logo:hover {
+    cursor:pointer;
+}
+
+nav.nav {
+    display:flex;
+    align-items: center;
+    margin: 0 35px;
+    color:#3CC25A;
+}
+
+.nav-list {
+    display: flex;
+    font-size: 1.625rem;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list a {
+    background-color: rgba(0,0,0,0);
+    margin-left: 1.1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 3em;
+    padding:5px 15px;   
+    transition:0.3s
+}
+
+.nav-list a:hover {
+    opacity:1;
+    background-color: rgba(0,0,0,1);
+    color:#3CC25A;
+}
+
+header img.sandwich-menu {
+    display: none;
+}
+
+/* header end */
+
+
+/* hero image / intro text */
+.hero-image-text div {
+    position: relative;
+}
+
+.hero-img {
+    width: auto;
+    width: 100%;
+    height:auto;
+    max-height: 800px;
+}
+
+section .intro-text-wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-text {
+    color: white;
+    font-weight: 400;
+}
+
+p.intro-text {
+    margin-left: -25px;
+    font-size: 1.45rem;
+}
+
+section .intro-text-wraper h1 {
+    font-size: 4.5rem;
+}
+
+.decor {
+    color: #3CC25A;
+}
+/* hero image / intro text end */
+
+
+/* skills & about start */
+.flex-container_skills {
+    width:100%;
+}
+
+section.section_about {
+    width: 100%;
+}
+
+section.section_about p {
+    margin-top: 42px;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.7rem;
+}
+
+.skills-section {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 35px
+}
+.skills-section h2  {
+    margin-top: 50px; 
+    font-size: 2.65rem;
+    text-align: center;
+}
+
+.skills-section h2.skills  {
+    letter-spacing: -3px;
+}
+
+.my_skills_wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 35px;
+}
+
+.my_skills {
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0 5px 50px 5px;
+    transition: .3s;
+}
+
+.my_skills:hover {
+    transition: .3s;
+    box-shadow: 4px 4px 12px 3px rgba(60, 194, 90, .5);
+}
+.my_skills p {
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #141414;
+}
+/* skills & about start end */
+
+
+/* work section grid */
+h2.work {
+    font-size: 2.65rem;
+    text-align: center;
+    margin: 50px 0 75px 0;
+}
+
+.grid-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    gap: 28px;
+    margin: 0 50px 50px 50px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EFFAF2;
+    color: black;
+    padding: 10px 20px;
+    border-radius: .5em;
+    transition: .3s;
+}
+
+.grid-item:hover {
+    box-shadow: 10px 10px 17px 3px rgba(60, 194, 90, .4);
+}
+
+.grid-item img {
+    border-radius: .3em;
+}
+/* work section grid end */
+
+
+/* contact form start */
+.form_container {
+    display: flex;
+    margin:0 auto;
+    width: 50%;
+    height:320px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    margin:0 auto;
+}
+
+form input:not(:last-child), textarea {
+    font-family: inherit;
+    margin: 0 0 30px 0;
+    border: none;
+    border-bottom: 1px solid #3CC25A;
+}
+
+#submit {
+    background-color: #3CC25A;
+    color: white;
+    border: none; 
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+#submit:hover {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #3CC25A;
+    color:#3CC25A;
+    box-shadow: 0 0 15px #5be07a;
+}
+
+/* contact form end */
+
+
+@media screen and ( max-width: 1200px ) {
+    .nav-list {
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        font-size: 1.8rem;
+    }
+
+    p.intro-text {
+        font-size: 1.1rem;
+    }
+    
+    section .intro-text-wraper h1 {
+        font-size: 3.3rem;
+    }
+    .hero-img {
+        max-height: 100vh;
+    }
+    
+    .skills-section h2  {
+        margin-top: 5px; 
+        
+    }
+    section.section_about p {
+        line-height: 23px;
+        font-size: .9rem;
+    }
+    section.section_about p,
+    .my_skills_wrapper {
+        /* margin-top:0; */
+        margin-top: 20px;
+    }
+
+    .grid-wrap {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .grid-item img {
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 780px ) {
+    .logo {
+        margin-left: 22px;
+        font-size: 1.2rem;
+    }
+
+    header {
+        min-height: 104px;
+        padding-top: 0;
+    }
+
+    nav.nav ul{
+        margin-top: 204px;
+        width: 100%;
+        background-color: #141414;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav.nav ul li {
+        margin: 3px 0;
+    }
+    
+    body > header > nav.nav {
+        margin: 0;
+    }
+    nav {
+        width: 100%;
+        position:absolute;
+    }
+    
+    header img.sandwich-menu {
+        cursor: pointer;
+        margin-right: 20px;
+        display: block;
+        z-index: 1;
+    }
+    
+    section .intro-text-wraper h1 {
+        font-size: calc(7vw - .1rem);
+    }
+    
+    section .intro-text-wraper p {
+        font-size: calc(3vw - .01rem);
+        margin: 0 auto;
+    }
+        
+    .skills-section {
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    .grid-wrap {
+        grid-template-columns: repeat(1, 100%);
+    }
+    .nav-list{
+        display:none;
+    }
+    .nav-list.active{
+        display:flex;
+    }
+} 
+
+@media screen and (max-width: 450px) {
+    .my_skills_wrapper {
+        max-width: 75%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    
+    div div.my_skills.html5,
+    div div.my_skills.css {
+        margin-top: 20px;
+    }
+
+
+    
+}
