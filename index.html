@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">    
+    
+    <!-- style sheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <title>Javier's Portfolio </title>
 </head>
 <body>
+
+    <!-- Navbar -->
     <header>
         <h1 class="logo">{J-Develops}</h1>
         
@@ -26,6 +33,7 @@
         <img class="sandwich-menu" src="images/sandwitch.png" alt="">
     </header>
 
+    <!-- holds hero image / about me / skills sections -->
     <main>
         <section class="hero-image-text">
             <div>
@@ -37,7 +45,7 @@
             </div>
         </section>
 
-        <section class="skills-section">
+        <section id="about-me" class="skills-section">
             <div class="flex-container_skills">
 
                 <h2 class="skills">skills</h2>
@@ -65,20 +73,20 @@
             </div>
 
             <section class="section_about">
-                <h2 id="about-me">About</h2>
-                <p>
+                <h2>About</h2>
+                <p id="my-work">
                     Hi, my name is Javier Rivera. I am a full stack web developer and currently
                     a careerfoundry student. Looking for an opportunity apply my creative problem solving
                     and anylytical skills on a web development team.
                 </p>
             </section>
         </section>
-        <hr>
+        <hr> 
     </main>
 
-
+    <!-- portfolio section -->
     <section>
-        <h2 id="my-work" class="work">My Work</h2>
+        <h2 class="work">My Work</h2>
         <div class="grid-wrap">
 
             <div class="grid-item">
@@ -148,13 +156,17 @@
         </div>
     </section>
 
-    <div class="form_container" id="contact">
+    <!-- my form -->
+    <div action="mailto:javierriver.webdev@gmail.com" mathod="POST"  enctype="text/plain" class="form_container" id="contact">
         <form>
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="First Name...">
 
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Last Name...">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email...">
 
             <label for="message">Message</label>
             <textarea name="message" id="message" placeholder="Message..." ></textarea>
@@ -163,6 +175,17 @@
         </form>
     </div>
 
+    <!-- footer -->
+    <footer>
+       <div class="social-wrap">
+           <a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit" class="social-icon fa-brands fa-linkedin-in fa-2x"></a>
+           <a href="https://www.twitter.com" class="social-icon fa-brands fa-twitter fa-2x"></a>
+           <a href="https://github.com/JavierR97" class="social-icon fa-brands fa-github-square fa-2x"></a>
+       </div>
+        
+    </footer>
+
+    <!-- scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>  
